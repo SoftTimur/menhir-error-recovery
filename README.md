@@ -1,11 +1,5 @@
-# Example of error recovery with Menhir
+## Steps to reproduce the error
 
-For the demo:
+Generate `AST.cmi` and `AST.cmo` by `ocamlfind ocamlc -c AST.ml`
 
-```
-make
-./parse example.input
-```
-
-Look at the comments in `parse.ml` for the implementation technique I
-used.
+`menhir --explain --inspection --table --dump --infer parser.mly` returned `Error: Unbound module Sedlexing`
