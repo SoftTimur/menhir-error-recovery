@@ -1,5 +1,7 @@
 %{ (* Emacs, open this file with -*- tuareg -*- *)
    open AST
+   
+   let xxx = Sedlexing.Utf8.from_string "abc"
 %}
 
 %token<int> LINT
